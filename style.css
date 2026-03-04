@@ -1,0 +1,290 @@
+/* Styles for portfolio page – copied from web/styles.css so layout matches history.html */
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-white: #FFFFFF;
+    --color-dark: #383838;
+    --color-medium: #646464;
+    --color-light: #999999;
+    --color-primary: #2b7fff;
+    --color-secondary: #47aaed;
+    --color-footer: #3f4e5d;
+    --font-mukta: 'Mukta', 'Noto Sans JP', sans-serif;
+    --font-geller: 'Geller Test', 'Noto Sans JP', sans-serif;
+    --font-zen: 'Zen Old Mincho', 'Noto Sans JP', serif;
+}
+
+body {
+    font-family: var(--font-mukta);
+    color: var(--color-dark);
+    line-height: 1.6;
+    overflow-x: visible;
+}
+
+/* Page Sections */
+.page-section {
+    min-height: 100vh;
+    padding-top: 40px;
+    overflow-x: visible;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 390px;
+    min-height: 390px;
+    max-height: 390px;
+    aspect-ratio: 1920 / 780;
+    overflow: hidden;
+    margin-top: -40px;
+}
+
+.hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    display: block;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.35);
+    z-index: 2;
+}
+
+.hero-content {
+    position: absolute;
+    bottom: 60px;
+    left: 80px;
+    z-index: 3;
+    color: var(--color-white);
+}
+
+.hero-title {
+    font-family: var(--font-zen);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 12px;
+}
+
+.hero-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--color-white);
+    padding-bottom: 4px;
+    border-bottom: 1px solid var(--color-white);
+}
+
+/* Timeline (History / Portfolio Page) */
+.timeline-container {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 0 40px;
+    position: relative;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 120px;
+    min-height: 200px;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 60px;
+}
+
+.timeline-year {
+    font-family: var(--font-geller);
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--color-dark);
+    margin-bottom: 12px;
+    position: absolute;
+    z-index: 2;
+}
+
+.timeline-left .timeline-year {
+    top: 0;
+    left: 0;
+}
+
+.timeline-right .timeline-year {
+    top: 0;
+    right: 0;
+    text-align: right;
+}
+
+.timeline-year-large {
+    font-family: var(--font-mukta);
+    font-size: 160px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.12);
+    position: absolute;
+    z-index: -1;
+    line-height: 1;
+    pointer-events: none;
+}
+
+.timeline-bg-left {
+    left: -40px;
+    top: -20px;
+}
+
+.timeline-bg-right {
+    right: -40px;
+    top: -20px;
+}
+
+.timeline-content-wrapper {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+    margin-top: 40px;
+    position: relative;
+}
+
+.timeline-content {
+    position: relative;
+    padding-top: 32px;
+    font-size: 14px;
+    color: var(--color-medium);
+    line-height: 1.5;
+}
+
+.timeline-left .timeline-content-wrapper {
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.timeline-left .timeline-content {
+    max-width: 420px;
+    flex-shrink: 0;
+}
+
+.timeline-left .timeline-image {
+    flex-shrink: 0;
+    max-width: 480px;
+}
+
+.timeline-right .timeline-content-wrapper {
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.timeline-right .timeline-content {
+    max-width: 420px;
+    flex-shrink: 0;
+}
+
+.timeline-right .timeline-image {
+    flex-shrink: 0;
+    max-width: 480px;
+}
+
+.timeline-image {
+    width: 100%;
+}
+
+.timeline-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+
+.timeline-image-small {
+    max-width: 400px !important;
+    width: 50% !important;
+}
+
+/* Footer */
+.footer {
+    background: var(--color-footer);
+    color: var(--color-white);
+    padding: 80px 0 20px;
+    margin-top: 100px;
+}
+
+.footer-container {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 130px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 60px;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-logo-line {
+    width: 30px;
+    height: 2px;
+    background: var(--color-secondary);
+}
+
+.footer-logo p {
+    font-size: 12px;
+    opacity: 0.9;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.footer-column h4 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column li {
+    margin-bottom: 15px;
+}
+
+.footer-column a {
+    color: var(--color-white);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-social {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}

@@ -1,0 +1,25 @@
+2019 Mar - 2019 Apr
+Simple Traffic Simulator
+The Simple Traffic Simulator is a Mobile VR application that teaches kids to cross roads safely using game elements; Players must cross roads to complete missions.
+
+2022 Apr - 2022 June
+VR Driving School
+This project simulates a driving school for learners in Hong Kong. It features a map based on the Ho Man Tin exam route and includes a rule system for exams, along with simple pedestrian and traffic systems.
+
+The application utilizes eye-tracking technology to provide an immersive and realistic experience.
+
+2022 Nov - 2023 Nov
+Spatial Project
+This research project consists of five mini-games aimed at testing and enhancing spatial skills. It includes a database to track players' reaction times and accuracy.
+
+As the lead developer, I was responsible for all aspects of game content, including programming, user interface design, game design, storytelling, scene design, and database integration.
+
+2023 Apr - 2024 Apr
+Smart Traffic Fund - VR Driving School Simulator
+This project is an advanced version of the VR Driving School Project, funded by the Smart Traffic Fund. In this enhanced version, a hand-tracking system has been implemented, enabling users to interact with various interior features, such as the hand brake, gear shifter, hazard lights, turn signals, and the engine start button.
+
+The project utilizes a Gaussian splat pipeline to simulate the streets of Hong Kong.
+
+2023 May - 2023 July
+3D TPS Mobile Game
+This 3D third-person shooter mobile game allows players to experience hide-and-seek in various scenes. In this project, I contributed to UI design, scene optimization, game coding, post-processing, story creation, game system development (specifically for hide and seek), and the cinematics for NPC cut scenes.
